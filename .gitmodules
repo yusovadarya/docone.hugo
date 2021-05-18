@@ -4,3 +4,6 @@
 [submodule "themes/dot-hugo-documentation-theme"]
 	path = themes/dot-hugo-documentation-theme
 	url = https://github.com/themefisher/dot-hugo-documentation-theme
+[submodule "themes/ace-documentation"]
+	path = themes/ace-documentation
+	url = https://github.com/vantagedesign/ace-documentation
