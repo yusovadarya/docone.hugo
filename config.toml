@@ -4,7 +4,7 @@ baseURL = "https://doconehugo.netlify.app"
 # theme
 theme = "dot"
 # site title
-title = "Dot"
+title = "Doc.one"
 # disable language
 disableLanguages = []
 # google analytics
@@ -24,11 +24,11 @@ logo_white = ""
 
 # OpenGraph / Twitter Card metadata
 description = "This is meta description"
-author = "Themefisher"
+author = "Pravo.tech"
 image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 
 # customize color
-primary_color = "#02007e"
+primary_color = "#4183D7"
 body_color = "#f9f9f9"
 text_color = "#636363"
 text_color_dark = "#242738"
@@ -36,7 +36,7 @@ white_color = "#ffffff"
 light_color = "#f8f9fa"
 
 # font family
-font_family = "lato" # Choose font family from : https://fonts.google.com/
+font_family = "Roboto" # Choose font family from : https://fonts.google.com/
 
 # contact form action
 contact_form_action = "#" # contact form works with : https://formspree.io
@@ -68,7 +68,7 @@ link = "#"
 languageName = "En"
 languageCode = "en-us"
 weight = 1
-copyright = "Copyright © 2020 a Hugo theme by [Gethugothemes](https://gethugothemes.com/)"
+copyright = "Copyright © 2021 [Pravo.tech](https://pravo.tech/)"
 
 # banner
 [Languages.en.params.banner]
@@ -130,68 +130,84 @@ hasChildren = true
   weight = 3
 
 
-################################### Franch Language ######################
-[Languages.fr]
-languageName = "Fr"
-languageCode = "fr-fr"
+################################### Russian Language ######################
+[Languages.ru]
+languageName = "Ru"
+languageCode = "ru-ru"
 weight = 2
-copyright = "Copyright © 2020 un thème Hugo par [Gethugothemes](https://gethugothemes.com/)"
+copyright = "Copyright © 2021 [Pravo.tech](https://pravo.tech/)"
 
 # banner
-[Languages.fr.params.banner]
-title = "Comment pouvons nous aider?"
-subtitle = "Trouvez rapidement des conseils et des réponses auprès de notre équipe d'assistance ou contactez-nous."
+[Languages.ru.params.banner]
+title = "Doc.one Справка"
+subtitle = "Найдите ответы в нашей справке или обратитесь в службу поддержки"
 bg_image = "images/banner.jpg"
-placeholder = "Avoir une question? Il suffit de demander ici ou de saisir les termes"
+placeholder = "Введите ваш вопрос здесь"
+
+#blocs
+[Languages.ru.params.section]
+section-title = "Найдите ответ в разделах справки"
 
 # call to action
-[Languages.fr.params.cta]
+[Languages.ru.params.cta]
 enable = true
-title = "Vous n'avez pas trouvé de réponse à votre question?"
-content = "Contactez-nous pour plus de détails sur les services supplémentaires et la tarification du travail personnalisé"
+title = "Все еще остались вопросы?"
+content = "Напишите в службу поддержки - наши менеджеры решат вашу проблему как можно скорее"
 # call to action button
-[Languages.fr.params.cta.button]
+[Languages.ru.params.cta.button]
 enable = true
-label = "Contactez nous"
+label = "Напишите нам"
 link = "contact"
 
 
-################## french navigation #################
-[[Languages.fr.menu.main]]
-name = "Accueil"
-url = "/"
+################## russian navigation #################
+[[Languages.ru.menu.main]]
+name = "Что нового?"
+url = "new"
 weight = 1
 
-[[Languages.fr.menu.main]]
-name = "Faq"
-url = "faq"
+[[Languages.ru.menu.main]]
+name = "Быстрое начало"
+url = "quickstart"
 weight = 2
 
-[[Languages.fr.menu.main]]
-name = "contact"
+[[Languages.ru.menu.main]]
+name = "Контакты"
 url = "contact"
 weight = 3
 
 # Dropdown menu
-[[Languages.fr.menu.main]]
+[[Languages.ru.menu.main]]
 weight = 4
-name = "docs"
+name = "Справка"
 hasChildren = true
 
-  [[Languages.fr.menu.main]]
-  parent = "docs"
-  name = "Installation"
-  url = "installation"
+  [[Languages.ru.menu.main]]
+  parent = "Справка"
+  name = "Авторизация и профиль"
+  url = "profile"
   weight = 1
 
-  [[Languages.fr.menu.main]]
-  parent = "docs"
-  name = "Billing and Pricing"
-  url = "billing-pricing"
+  [[Languages.ru.menu.main]]
+  parent = "Справка"
+  name = "Документы"
+  url = "documents"
   weight = 2
 
-  [[Languages.fr.menu.main]]
-  parent = "docs"
-  name = "Features"
-  url = "features"
+  [[Languages.ru.menu.main]]
+  parent = "Справка"
+  name = "Шаблоны"
+  url = "templates"
   weight = 3
+
+  [[Languages.ru.menu.main]]
+  parent = "Справка"
+  name = "Настройки"
+  url = "settings"
+  weight = 4
+
+  [[Languages.ru.menu.main]]
+  parent = "Справка"
+  name = "API"
+  url = "api"
+  weight = 5
