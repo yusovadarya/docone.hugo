@@ -1,0 +1,29 @@
+---
+title: "Авторизация в Doc.one"
+date: {now}
+weight: 1
+draft: false
+# search related keywords
+keywords: авторизация, вход
+---
+
+
+. Откройте страницу авторизации в Doc.one. Адрес страницы авторизации
+можно взять в приглашении — это начало ссылки в письме.
+
+image::\profile\autorization\2020-09-01_153550.png[Страница авторизации]
+
+[arabic, start=2]
+. Введите логин — email, на который вы получали приглашение, а также
+пароль, который вы создавали при регистрации.
+. Нажмите кнопку *НАЧАТЬ РАБОТУ*.
+. Вы автоматически перейдете в главный раздел Doc.one.
+
+image::\profile\autorization\autorization.gif[Авторизация в Doc.one]
+
+[arabic, start=5]
+. Если в вашей компании настроен централизованный доступ через Microsoft
+Azure Active Directory, вы можете авторизоваться через MS Azure AD,
+нажав кнопку AZURE AD на странице входа.
+
+image::\profile\autorization\2020-09-01_160031.png[Авторизация в Doc.one через MS Azure AD]

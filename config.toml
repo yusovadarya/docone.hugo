@@ -17,13 +17,13 @@ unsafe = true
 ############################# Default Parameters ##########################
 [params]
 # logo is for all page
-logo = ""
+logo = "images/logo.png"
 # logo white is for homepage logo, you can use colorful logo too...
-logo_white = ""
+logo_white = "images/logo_white.png"
 # when logo is empty, it will shown your site title
 
 # OpenGraph / Twitter Card metadata
-description = "This is meta description"
+description = "Справка к системе Doc.one"
 author = "Pravo.tech"
 image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 
@@ -72,16 +72,16 @@ copyright = "Copyright © 2021 [Pravo.tech](https://pravo.tech/)"
 
 # banner
 [Languages.en.params.banner]
-title = "Support Center & Knowledge base"
+title = "Doc.one Knowledge base"
 subtitle = "Find advice and answers from our support team fast or get in touch"
-bg_image = "images/banner.jpg"
+bg_image = "images/banner.png"
 placeholder = "Have a question? Just ask here or enter terms"
 
 # call to action
 [Languages.en.params.cta]
 enable = true
 title = "Didn't find an answer to your question?"
-content = "Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam."
+content = "Ask our support team. We will solve your problem as soon as possible"
 # call to action button
 [Languages.en.params.cta.button]
 enable = true
@@ -91,44 +91,55 @@ link = "contact"
 
 ################## english navigation #################
 [[Languages.en.menu.main]]
-name = "Home"
-url = "/"
+name = "What's new?"
+url = "new"
 weight = 1
 
 [[Languages.en.menu.main]]
-name = "Faq"
-url = "faq"
+name = "Getting started"
+url = "quickstart"
 weight = 2
 
 [[Languages.en.menu.main]]
-name = "contact"
+name = "Contact"
 url = "contact"
 weight = 3
 
 # Dropdown menu
 [[Languages.en.menu.main]]
 weight = 4
-name = "docs"
+name = "Help"
 hasChildren = true
 
   [[Languages.en.menu.main]]
-  parent = "docs"
-  name = "Installation"
-  url = "installation"
+  parent = "Help"
+  name = "Authorization and profile"
+  url = "profile"
   weight = 1
 
   [[Languages.en.menu.main]]
-  parent = "docs"
-  name = "Billing and Pricing"
-  url = "billing-pricing"
+  parent = "Help"
+  name = "Documents"
+  url = "documents"
   weight = 2
 
   [[Languages.en.menu.main]]
-  parent = "docs"
-  name = "Features"
-  url = "features"
+  parent = "Help"
+  name = "Templates"
+  url = "templates"
   weight = 3
 
+  [[Languages.en.menu.main]]
+  parent = "Help"
+  name = "Settings"
+  url = "settings"
+  weight = 4
+
+  [[Languages.en.menu.main]]
+  parent = "Help"
+  name = "API"
+  url = "api"
+  weight = 5
 
 ################################### Russian Language ######################
 [Languages.ru]
@@ -141,7 +152,7 @@ copyright = "Copyright © 2021 [Pravo.tech](https://pravo.tech/)"
 [Languages.ru.params.banner]
 title = "Doc.one Справка"
 subtitle = "Найдите ответы в нашей справке или обратитесь в службу поддержки"
-bg_image = "images/banner.jpg"
+bg_image = "images/banner.png"
 placeholder = "Введите ваш вопрос здесь"
 
 #blocs
@@ -211,3 +222,8 @@ hasChildren = true
   name = "API"
   url = "api"
   weight = 5
+
+
+  #####################################################Frontmatter######################################################
+  #[frontmatter]
+  #lastmod = [":git", "lastmod", "date"]

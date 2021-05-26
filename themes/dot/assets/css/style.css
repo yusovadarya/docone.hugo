@@ -534,7 +534,7 @@ textarea.form-control {
   max-width: 100%;
   height: auto;
   margin: 0 auto 15px;
-  display: block;
+  /*display: block; - Исправила это, чтобы кнопки были в тексте, а не в отдельной строке*/
   text-align: center;
 }
 
@@ -666,7 +666,7 @@ tbody {
 }
 
 .notices.note p::after {
-  content: 'Note';
+  content: 'Внимание'; 
   position: absolute;
   top: 2px;
   color: #fff;
@@ -680,7 +680,7 @@ tbody {
 }
 
 .notices.tip p::after {
-  content: 'Tip';
+  content: 'Совет';
   position: absolute;
   top: 2px;
   color: #fff;
@@ -707,7 +707,7 @@ tbody {
 }
 
 .notices.warning p::after {
-  content: 'Warning';
+  content: 'Важно!';
   position: absolute;
   top: 2px;
   color: #fff;
