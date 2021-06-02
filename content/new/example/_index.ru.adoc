@@ -16,6 +16,7 @@ keywords: пример, разметка, asciidoc
 
 image::\documents\create_doc\create_doc.gif[Картинка или гифка по центру страницы]
 
+image::\images\create_doc.gif
 
 Вот так следует офоромлять ссылки на другие страницы сайта -
 см. link:/ru/documents/02_folder[Название ссылки].

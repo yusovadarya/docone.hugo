@@ -232,7 +232,7 @@ pre {
   top: 0;
   left: 0;
   background: var(--primary-color);
-  opacity: .8;
+  opacity: .1;
 }
 
 .outline-0 {
@@ -666,7 +666,7 @@ tbody {
 }
 
 .notices.note p::after {
-  content: 'Внимание'; 
+  content: 'Внимание';
   position: absolute;
   top: 2px;
   color: #fff;

@@ -1,0 +1,28 @@
+= Руководство пользователя
+:doctype: book
+:lang: ru-ru
+:ascii-ids:
+:showcomments:
+:imagesdir: ../../pdf/images/ 
+
+== Авторизация и профиль пользователя
+include::../profile/_index.ru.md[]
+include::../profile/autorization/_index.ru.adoc[]
+include::../profile/exit/_index.ru.adoc[]
+include::../profile/password_recovery/_index.ru.adoc[]
+include::../profile/registration/_index.ru.adoc[]
+
+////
+== Документы
+////
+
+include::../documents/search_doc/_index.ru.adoc[]
+include::../documents/folder/_index.ru.adoc[]
+include::../documents/create_doc/_index.ru.adoc[]
+include::../documents/create_doc_package/_index.ru.adoc[]
+include::../documents/doc_attach_files/_index.ru.adoc[]
+
+
+////
+Always end files with a blank line to avoid include problems.
+////
