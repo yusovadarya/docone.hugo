@@ -1,3 +1,14 @@
+---
+title: "Версия 29. Апрель, 2021."
+weight: 1
+draft: false
+date: 2021-05-24T11:02:05+06:00
+lastmod: 2021-05-24T10:42:26+06:00
+# search related keywords
+keywords: what's new, new, новости, новое, нового, 29, апрель
+---
+
+
 = Апрель 2021
 
 == Документы

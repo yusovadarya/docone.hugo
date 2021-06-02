@@ -1,0 +1,13 @@
+---
+title: "Что нового?"
+weight: 1
+draft: false
+date: 2021-05-24T11:02:05+06:00
+lastmod: 2021-05-24T10:42:26+06:00
+# search related keywords
+keywords: what's new, new, новости, новое, нового
+---
+
+= Что нового?
+
+Узнайте о последних доработках в Doc.one.

@@ -1,6 +1,6 @@
 ---
 title: "Пример разметки asciidoc"
-weight: 1
+weight: 1000
 draft: false
 date: 2021-05-24T11:02:05+06:00
 lastmod: 2021-05-24T10:42:26+06:00
