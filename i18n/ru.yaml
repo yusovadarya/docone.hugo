@@ -2,4 +2,19 @@
   translation: Найдите ответ в разделах справки
 
 - id: send
-  translation: Envoyer
+  translation: Отправить
+
+- id: name
+  translation: Имя
+
+- id: subject
+  translation: Тема
+
+- id: message
+  translation: Сообщение
+
+- id: toc
+  translation: На этой странице
+
+- id: updated
+  translation: Обновлено

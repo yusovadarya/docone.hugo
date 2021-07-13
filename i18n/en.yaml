@@ -1,5 +1,20 @@
 - id: topics_title
   translation: Find your answer by subject
-  
+
 - id: send
   translation: Send
+
+- id: name
+  translation: Name
+
+- id: subject
+  translation: Subject
+
+- id: message
+  translation: Message
+
+- id: toc
+  translation: On this page
+
+- id: updated
+  translation: Updated on

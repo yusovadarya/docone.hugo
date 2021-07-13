@@ -12,46 +12,71 @@ P {
   font-size: 15px;
 }
 
-h1,
-h2,
+h1 {
+  color: var(--primary-color);
+  font-family: var(--font-family), sans-serif;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+h2 {
+  color: var(--primary-color);
+  font-family: var(--font-family), sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
 h3,
 h4,
-h5,
-h6 {
+h5 {
   color: var(--text-color-dark);
   font-family: var(--font-family), sans-serif;
   font-weight: 700;
   line-height: 1.2;
 }
 
+h6 {
+  color: var(--text-color-dark);
+  font-family: var(--font-family), sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.2;
+}
+
 h1,
 .h1 {
-  font-size: 45px;
+  font-size: 48px;
+  margin-bottom: 20px;
 }
 
 h2,
 .h2 {
-  font-size: 32px;
+  font-size: 36px;
+  margin-bottom: 10px;
 }
 
 h3,
 .h3 {
-  font-size: 26px;
+  font-size: 28px;
+  margin-top: 20px;
 }
 
 h4,
 .h4 {
-  font-size: 20px;
+  font-size: 22px;
+  margin-top: 20px;
 }
 
 h5,
 .h5 {
-  font-size: 18px;
+  font-size: 14px;
+  margin-top: 10px;
 }
 
 h6,
 .h6 {
   font-size: 14px;
+  margin-top: 10px;
 }
 
 /* Button style */
@@ -136,13 +161,34 @@ h6,
 ul {
   list-style-type: none;
   margin: 0px;
-  padding-left: 0;
+  padding-left: 0px;
   font-size: 15px;
 }
 
 ol {
   padding-left: 20px;
   font-size: 15px;
+  list-style: decimal;
+}
+
+li {
+  margin: -10px;
+  margin-left: 10px;
+}
+
+/* Названия списков */
+.title {
+   font-size: 15px;
+   font-style: italic;
+}
+
+/* Вкладки карусели */
+.nav-item {
+  margin: 0px;
+}
+
+.nav-item.active {
+  margin: 0px;
 }
 
 img {
@@ -528,7 +574,7 @@ textarea.form-control {
 
 .content * {
   margin-bottom: 20px;
-}
+  }
 
 .content img {
   max-width: 100%;
@@ -583,20 +629,6 @@ textarea.form-control {
   font-size: 14px;
 }
 
-blockquote {
-  font-size: 20px !important;
-  color: var(--text-color-dark);
-  padding: 20px 40px;
-  border-left: 2px solid var(--primary-color);
-  margin: 40px 0;
-  font-weight: bold;
-  background: var(--light-color);
-}
-
-blockquote p {
-  margin-bottom: 0 !important;
-}
-
 .pagination {
   justify-content: space-between;
 }
@@ -618,7 +650,6 @@ blockquote p {
 table {
   text-align: left;
   width: 100%;
-  max-width: 100%;
   margin-bottom: 1rem;
   border: 1px solid #dee2e6;
 }
@@ -626,7 +657,7 @@ table {
 table td,
 table th {
   padding: .75rem;
-  vertical-align: top;
+  vertical-align: center;
   border: 1px solid #dee2e6;
   margin-bottom: 0;
 }
@@ -639,6 +670,160 @@ thead {
 tbody {
   background: #f8f8f8;
   margin-bottom: 0;
+}
+
+td.icon {
+  width: 50px;
+  border: 0;
+}
+
+td.content {
+  max-width: 592px;
+  padding: 7px;
+  text-align: left;
+  color: var(--text-color);
+  border: 0;
+  -moz-box-sizing: border-box; /* Для Firefox */
+  -webkit-box-sizing: border-box; /* Для Safari и Chrome */
+  box-sizing: border-box; /* Для IE и Opera */
+  word-wrap:break-word; /* Перенос слов по строкам!!! */
+}
+
+/* Добавила стили блоков внимания*/
+.admonitionblock {
+  margin: 2rem 0;
+  position: relative;
+  word-wrap:break-word;
+}
+
+.admonitionblock div.title {
+  font-size: 0px;
+}
+
+.admonitionblock table {
+    width: 100%;
+    margin-bottom: 1rem;
+    border: 0;
+}
+
+.admonitionblock.warning td.icon {
+   align: left;
+   vertical-align: center;
+   color: rgba(255,153,102,1);
+   background-color: rgba(255,153,102,1);
+   font-size: 0px;
+}
+
+.admonitionblock.warning td.icon::before {
+  font-family: themify;
+  font-weight: normal;
+  font-size: 30px;
+  content: "\e6c5";
+  position: absolute;
+  color: #fff;
+  left: 10px;
+  top: 2px;
+}
+
+.admonitionblock.warning td.content {
+  background-color: rgba(255,153,102,0.1);
+  font-size: 15px;
+}
+
+.admonitionblock.note td.icon {
+   align: left;
+   vertical-align: center;
+   color: rgba(102,153,255,1);
+   background-color: rgba(102,153,255,1);
+   font-size: 1px;
+}
+
+.admonitionblock.note td.icon::before {
+  font-family: themify;
+  font-weight: normal;
+  font-size: 30px;
+  content: "\e717";
+  position: absolute;
+  color: #fff;
+  left: 10px;
+  top: 2px;
+}
+
+.admonitionblock.note td.content {
+  background-color: rgba(153,204,255,0.1);
+  font-size: 15px;
+}
+
+.admonitionblock.tip td.icon {
+   align: left;
+   vertical-align: center;
+   color: rgba(51,255,153,1);
+   background-color: rgba(51,255,153,1);
+   font-size: 1px;
+}
+
+.admonitionblock.tip td.icon::before {
+  font-family: themify;
+  font-weight: normal;
+  font-size: 30px;
+  content: "\e64c";
+  position: absolute;
+  color: #fff;
+  left: 10px;
+  top: 2px;
+}
+
+.admonitionblock.tip td.content {
+  background-color: rgba(51,255,153,0.1);
+  font-size: 15px;
+}
+
+.admonitionblock.caution td.icon {
+   align: left;
+   vertical-align: center;
+   color: rgba(255,255,102,1);
+   background-color: rgba(255,255,102,1);
+   font-size: 1px;
+}
+
+.admonitionblock.caution td.icon::before {
+  font-family: themify;
+  font-weight: normal;
+  font-size: 30px;
+  content: "\e6c5";
+  position: absolute;
+  color: #fff;
+  left: 10px;
+  top: 2px;
+}
+
+.admonitionblock.caution td.content {
+  background-color: rgba(255,255,102,0.3);
+  font-size: 15px;
+}
+
+.admonitionblock.important td.icon {
+   align: left;
+   vertical-align: center;
+   color: rgba(204,0,204,1);
+   background-color: rgba(204,0,204,1);
+   font-size: 1px;
+}
+
+.admonitionblock.important td.icon::before {
+  font-family: themify;
+  font-weight: normal;
+  font-size: 30px;
+  content: "\e652";
+  position: absolute;
+  color: #fff;
+  left: 10px;
+  top: 2px;
+}
+
+.admonitionblock.important td.content {
+  background-color: rgba(204,0,204,0.1);
+  font-size: 15px;
 }
 
 .notices {
@@ -714,15 +899,57 @@ tbody {
   left: 2rem;
 }
 
+/* блоки */
+
+.listingblock {
+  background-color: rgba(204,204,204,0.3);
+}
+
+.exampleblock {
+  background-color: rgba(102,153,255,0.3);
+  padding: 7px;
+}
+
+blockquote {
+  font-size: 20px !important;
+  color: var(--text-color-dark);
+  padding: 20px 40px;
+  border-left: 2px solid var(--primary-color);
+  margin: 40px 0;
+  font-weight: bold;
+  background: var(--light-color);
+}
+
+blockquote p {
+  margin-bottom: 0 !important;
+}
+
+.sidebarblock {
+  background-color: var(--primary-color);
+  padding: 7px;
+  max-width: 270px;
+  box-sizing: border-box;
+  position: static;
+  float: right;
+}
+
+.sidebarblock p {
+  color: var(--white-color);
+  word-wrap:break-word;
+  text-align: right;
+  vertical-align: middle;
+}
 /* /single page */
 
 /* side list */
 .sidebar {
   background-color: var(--white-color);
   position: sticky;
+  height: 100%;
   top: 50px;
   margin-bottom: 30px;
-  padding: 40px 10px 20px 10px;
+  padding: 40px 20px 20px 20px;
+
 }
 
 .sidelist {
@@ -783,6 +1010,7 @@ pre {
 code {
   margin-bottom: 0 !important;
   font-size: 100%;
+  color: var(--primary-color);
 }
 
 .back-btn {
@@ -800,8 +1028,8 @@ code {
   color: inherit;
   text-align: right;
   z-index: 1;
-  left: -5px;
-  top: -5px;
+  left: -10px;
+  top: -10px;
 }
 
 .ui-autocomplete-input {
@@ -883,4 +1111,12 @@ pre code::-webkit-scrollbar-thumb {
 
 .code-tabs .nav-tabs .nav-item.active .nav-link {
   color: var(--white-color);
+}
+
+/*элементы toc на правой панели*/
+.list-unstyled li {
+  margin:5px;
+  margin-left:0;
+  padding-left: 15px;
+  position: relative;
 }

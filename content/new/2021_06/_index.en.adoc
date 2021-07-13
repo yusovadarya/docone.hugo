@@ -1,0 +1,82 @@
+---
+title: "Version 30. June, 2021"
+weight: -10
+draft: false
+date:
+lastmod: # search related keywords
+keywords: what's new, new, 30, June
+---
+
+:toc:
+:toclevels: 6
+:fileModTime:
+:experimental:
+
+=== Templates
+==== Publication
+We have fixed the Publish button in the template. Now, after publishing a template, it immediately becomes inactive.
+
+The package is published immediately now, if you:
+* copy it from the published package;
+* create a package based on published templates, even if it contains several unpublished ones.
+
+==== Conditions
+Now, if you delete a part of a paragraph with an added condition, the condition itself is not deleted.
+
+But if you add a page break to all the text under the condition, the condition will be removed.
+
+The condition is now removed from the condition group in the sidebar if the сreation is canceled (Redo).
+
+Now, when you select any content in the template, the Show Condition button is displayed in the sidebar.
+
+==== Fields
+Now, if in the headers and footers you delete a table cell and a field in it, the field will be removed from the list in the sidebar.
+
+We have fixed the work of the calendar when filling in  the Date type field for 2020-2021.
+
+We have fixed the work of the Select field.
+
+Now the field editor in Internet Explorer opens  by the first click in the field.
+
+We have improved the display of a field name in the field list in Internet Explorer. If the title is long, it wraps across multiple lines.
+
+[API] We have fixed the error of transferring data using the Put and Post methods in a request with a filled-in Value parameter for the Formula type field.
+
+==== Blocks
+We have fixed a bug with opening a block menu after selecting its content in Internet Explorer.
+
+==== Text editor
+Undo and Redo with template text now work correctly in Internet Explorer.
+
+We have fixed the problem with setting the cursor in the table row.
+
+We have fixed a bug that occurred when pasting text, adjusting indents and then undoing an action.
+
+We have improved putting on paragraph font to list bullets.
+
+We have fixed the selection of template content using Ctrl + A.
+
+Internet Explorer no longer displays gray borders around content.
+
+==== Document Name Template
+Internet Explorer no longer displays the list of tags for the Package Naming Rule field setting when opening or creating a template.
+
+We have improved the search by tags in the Document Name Template setting.
+
+We have fixed a typing bug in the Document Name Template field in Safari.
+
+=== Documentation
+Now, if you try to download a package with empty required fields, you will see an error message.
+
+We have fixed the display of the number 0.00 when rounding a negative number.
+
+We have improved the MS World plugin. An empty cell is displayed in the downloaded document in place of an empty input field in the table in the downloaded document.
+
+We have improved the display of the table when filling in Mozilla FireFox.
+
+Now cells of imbedded tables are adjusted to fit the images in Internet Explorer.
+
+Now moving with the Down and Up keys in the list with empty items is correct.
+
+=== Workflows
+We have fixed the bug of passing field names through a variable in the script. Now the variable is passed with a postfix.

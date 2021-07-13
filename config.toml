@@ -17,9 +17,9 @@ unsafe = true
 ############################# Default Parameters ##########################
 [params]
 # logo is for all page
-logo = "images/logo.png"
+logo = "images/logo_1.png"
 # logo white is for homepage logo, you can use colorful logo too...
-logo_white = "images/logo_white.png"
+logo_white = "images/logo_white_2.png"
 # when logo is empty, it will shown your site title
 
 # OpenGraph / Twitter Card metadata
@@ -28,7 +28,8 @@ author = "Pravo.tech"
 image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 
 # customize color
-primary_color = "#4183D7"
+primary_color = "#0033FF"
+example_color = "#99CCFF"
 body_color = "#f9f9f9"
 text_color = "#636363"
 text_color_dark = "#242738"
@@ -39,35 +40,33 @@ light_color = "#f8f9fa"
 font_family = "Roboto" # Choose font family from : https://fonts.google.com/
 
 # contact form action
-contact_form_action = "#" # contact form works with : https://formspree.io
+contact_form_action = "https://formspree.io/f/xvodqwgz" # contact form works with : https://formspree.io
 
 
 ############################## social links ##############################
 [[params.social]]
 icon = "ti-facebook" # themify icon pack : https://themify.me/themify-icons
 name = "Facebook"
-link = "#"
+link = "https://www.facebook.com/pravotech"
 
 [[params.social]]
-icon = "ti-twitter-alt" # themify icon pack : https://themify.me/themify-icons
-name = "Twitter"
-link = "#"
+icon = "ti-instagram" # themify icon pack : https://themify.me/themify-icons
+name = "Instagram"
+link = "https://www.instagram.com/pravotech/"
 
 [[params.social]]
-icon = "ti-github" # themify icon pack : https://themify.me/themify-icons
-name = "Github"
-link = "#"
-
-[[params.social]]
-icon = "ti-linkedin" # themify icon pack : https://themify.me/themify-icons
-name = "Linkedin"
-link = "#"
+icon = "ti-youtube" # themify icon pack : https://themify.me/themify-icons
+name = "Youtube"
+link = "https://www.youtube.com/channel/UCUawbZTrqMnubT9qlNTW5ww"
+#############################Languages##########################
+#defaultContentLanguage = "ru"
 
 ################################ English Language ######################
 [Languages.en]
-languageName = "En"
-languageCode = "en-us"
-weight = 1
+title = "Doc.one help"
+languageName = "English"
+languageCode = "en"
+weight = 2
 copyright = "Copyright © 2021 [Pravo.tech](https://pravo.tech/)"
 
 # banner
@@ -103,11 +102,11 @@ weight = 2
 [[Languages.en.menu.main]]
 name = "Contact"
 url = "contact"
-weight = 3
+weight = 4
 
 # Dropdown menu
 [[Languages.en.menu.main]]
-weight = 4
+weight = 3
 name = "Help"
 hasChildren = true
 
@@ -143,9 +142,9 @@ hasChildren = true
 
 ################################### Russian Language ######################
 [Languages.ru]
-languageName = "Ru"
-languageCode = "ru-ru"
-weight = 2
+languageName = "Russian"
+languageCode = "ru"
+weight = 1
 copyright = "Copyright © 2021 [Pravo.tech](https://pravo.tech/)"
 
 # banner
@@ -153,7 +152,7 @@ copyright = "Copyright © 2021 [Pravo.tech](https://pravo.tech/)"
 title = "Doc.one Справка"
 subtitle = "Найдите ответы в нашей справке или обратитесь в службу поддержки"
 bg_image = "images/banner.png"
-placeholder = "Введите ваш вопрос здесь"
+placeholder = "Напишите ваш вопрос здесь"
 
 #blocs
 [Languages.ru.params.section]
@@ -163,7 +162,7 @@ section-title = "Найдите ответ в разделах справки"
 [Languages.ru.params.cta]
 enable = true
 title = "Все еще остались вопросы?"
-content = "Напишите в службу поддержки - наши менеджеры решат вашу проблему как можно скорее"
+content = "Напишите в службу поддержки - мы решим вашу проблему как можно скорее"
 # call to action button
 [Languages.ru.params.cta.button]
 enable = true
@@ -183,13 +182,13 @@ url = "quickstart"
 weight = 2
 
 [[Languages.ru.menu.main]]
-name = "Контакты"
+name = "Поддержка"
 url = "contact"
-weight = 3
+weight = 4
 
 # Dropdown menu
 [[Languages.ru.menu.main]]
-weight = 4
+weight = 3
 name = "Справка"
 hasChildren = true
 
@@ -225,5 +224,12 @@ hasChildren = true
 
 
   #####################################################Frontmatter######################################################
-  #[frontmatter]
-  #lastmod = [":git", "lastmod", "date"]
+  [frontmatter]
+  lastmod = [":git", "lastmod", "date", ":fileModTime", ":default"]
+
+###################TOC settings#########################################
+  [markup]
+  [markup.tableOfContents]
+    endLevel = 5
+    ordered = false
+    startLevel = 2

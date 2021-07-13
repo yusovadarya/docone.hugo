@@ -1,0 +1,23 @@
+---
+title: "Version 29. April, 2021"
+weight: 10
+draft: false
+date: 2021-05-24T11:02:05+06:00
+lastmod: 2021-05-24T10:42:26+06:00
+# search related keywords
+keywords: what's new, new, 29, April
+---
+
+:toc:
+:toclevels: 6
+:fileModTime:
+:experimental:
+
+=== Documents
+Now you can add files to documents: applications, specifications,  documents copies, etc. Adding and downloading files is available in the application, as well as through the API.
+
+=== Templates
+You can completely clear or copy the text style (font, size, color, weight, alignment and padding).
+
+=== Transfering templates and documents
+We have done a script to transfer templates and blocks to another instance. The system administrator can transfer data using the API.

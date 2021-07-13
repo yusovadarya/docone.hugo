@@ -1,6 +1,6 @@
 ---
-title: "Got Any Questions"
+title: "Got any questions?"
 draft: false
 ---
 
-Submit the form and confirm your email address at [Formspree](https://formspree.io/).
+Write your question and contact information - we will help you solve the problem.

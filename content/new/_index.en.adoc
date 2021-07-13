@@ -1,0 +1,13 @@
+---
+title: "What's new?"
+weight: 1
+draft: false
+date:
+lastmod:
+# search related keywords
+keywords: what's new, new
+---
+
+= What's new?
+
+Learn what's new in Doc.one.

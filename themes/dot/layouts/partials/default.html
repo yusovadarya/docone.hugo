@@ -1,6 +1,6 @@
 {{ "<!-- details page -->" | safeHTML }}
 <section class="single section-sm pb-0">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-3">
         <div class="sidebar">
@@ -15,11 +15,11 @@
           </ul>
         </div>
       </div>
-      <div class="col-lg-9">
+      <div class="col-lg-7">
         <div class="p-lg-5 p-4 bg-white">
-          <h2 class="mb-5">{{ .Title }}</h2>
           {{ if .Content }}
-          <div class="content">{{.Content}}</div>
+          <div class="content">{{.Content}}
+          </div>
           {{ else }}
           <div class="bg-light p-4">
             <ul class="page-list">
@@ -27,7 +27,7 @@
             </ul>
           </div>
           {{ end }}
-          <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on {{ .Lastmod.Format "02 Jan 2006" }}</p>
+          <p class="post-meta border-bottom pb-3 mb-0 mt-3">{{ i18n "updated" }} {{ .Lastmod.Format "02.01.2006" }}</p>
           <nav class="pagination mt-3">
             <!-- Next prev page -->
             {{ $currentNode := . }}
@@ -67,6 +67,16 @@
             <a class="nav nav-next" href="{{.Permalink }}" aria-label="Previous page" > <span class="d-none d-md-block">{{.Title}}</span><i class="ti-arrow-right ml-2"></i></a>
             {{end}}
           </nav>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="p-lg-4 py-2 lh-lg bg-white">
+          {{ i18n "toc" }}:
+          <ul class="list-unstyled py-3">
+            {{ .TableOfContents }}
+          </ul>
+        </div>
+          </div>
         </div>
       </div>
     </div>
