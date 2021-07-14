@@ -579,9 +579,13 @@ textarea.form-control {
 .content img {
   max-width: 100%;
   height: auto;
-  margin: 0 auto 15px;
+  margin-left: auto;
+  margin-right: auto;
   /*display: block; - Исправила это, чтобы кнопки были в тексте, а не в отдельной строке*/
   text-align: center;
+  border: 1px solid;
+  border-color: #6699FF;
+  vertical-align: -100%;
 }
 
 .content ul {
@@ -1119,4 +1123,8 @@ pre code::-webkit-scrollbar-thumb {
   margin-left:0;
   padding-left: 15px;
   position: relative;
+}
+
+.imageblock {
+  text-align: center;
 }

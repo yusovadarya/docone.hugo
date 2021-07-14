@@ -232,4 +232,4 @@ hasChildren = true
   [markup.tableOfContents]
     endLevel = 5
     ordered = false
-    startLevel = 2
+    startLevel = 3
